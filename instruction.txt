@@ -1,0 +1,55 @@
+Dự đoán doanh thu phim 
+Sử dụng 3 mô hình: Hồi quy tuyến tính, Hồi quy Ridge, Random Forest
+-------------------------------------------------------------------
+
+Các thư viện, ngôn ngữ và gói phần mềm được sử dụng:
+	+ Sử dụng "jupyter notebook" có trong "anaconda"
+	+ Python version 3.10: toàn bộ project đều sử dụng ngôn ngữ 
+  lập trình python 
+	+ numpy: thư viện xử lý dữ liệu số, mảng,..
+	+ pandas: thư viện dùng để thao tác với dữ liệu
+	+ matplotlib và seaborn: thư viện dùng để vẽ đồ thị trực quan
+  hóa dữ liệu
+	+ sklearn.preprocessing import StandardScaler: quy đổi tỷ lệ
+	+ train_test_split: dùng để phân chia tập dữ liệu
+	+ GridSearchCV: dùng để điều chỉnh siêu tham số
+	+ sklearn.linear_model import Ridge: xây dựng mô hình học máy
+	+ sklearn.ensemble import RandomForestRegressor: xây dựng mô 
+  hình học máy
+	+ sklearn.linear_model import LinearRegression: xây dựng mô 
+  hình học máy
+	+ sklearn.metrics import mean_absolute_error: tính sai số tuyệt
+  đối trung bình MAE
+-------------------------------------------------------------------
+
+Cách thức cài đặt/ biên dịch/ chạy chương trình:
+	+ B1: Nhóm sử dụng "jupyter notebook" có trong "anaconda" để thực 
+  hiện bài tập lớn. Do đó cần cài đặt phần mềm "anaconda" để chạy chương 
+  trình
+	+ B2: Giải nén file "source codes.zip"
+	+ B3: Mở phần mềm "anaconda" và mở "jupyter notebook" trong đó để 
+  thực hiện chạy chương trình
+	+ B4: Chạy file "Xử lý dữ liệu.ipynb" để thu được dữ liệu dùng để
+  huấn luyện. Tuy nhiên, bước này có thể BỎ QUA do nhóm đã xuất được file
+  và đặt vào folder data với tên "data_unnoise.csv"
+	+ B5: Chạy file "Linear regression.ipynb" để thu được kết quả dự 
+  đoán bằng mô hình hồi quy tuyến tính
+	+ B6: Chạy file "Rigde regression.ipynb" để thu được kết quả dự 
+  đoán bằng mô hình hồi quy Rigde
+	+ B7: Chạy file "Random Forest.ipynb" để thu được kết quả dự đoán
+  bằng mô hình Random Forest
+-------------------------------------------------------------------
+
+Giải thích các file có trong file zip "source codes":
+	+ Dữ liệu được lưu trữ trong folder "data" gồm 2 file:
+		. movies_metadata.csv: dữ liệu ban đầu nhóm thu thập được
+		. data_unnoise.csv: dữ liệu nhóm có được sau khi được xử lý
+	+ File "Xử lý dữ liệu.ipynb": là file nhóm dùng để xử lý dữ liệu,
+  file này thể hiện được toàn bộ quá trình nhóm xử lý, phân tích dữ liệu,
+  xuất file sau khi đã xử lý xong.
+	+ Có 3 file huấn luyện mô hình bao gồm:
+		. "Linear regression.ipynb": mô hình hồi quy tuyến tính
+		. "Rigde regression.ipynb": mô hình hồi quy Ridge
+		. "Random Forest.ipynb": mô hình random forest
+
+
